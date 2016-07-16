@@ -1,0 +1,9 @@
+y2=fft(x,64);
+y3=fft(x,128);
+figure;
+subplot(3,1,1);
+plot(abs(y))
+subplot(3,1,2);
+plot(abs(y2))
+subplot(3,1,3);
+plot(abs(y3))
