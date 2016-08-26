@@ -1,4 +1,4 @@
-I1 = imread('..\images\lena512color.tiff')
+I1 = imread('images\lena512color.tiff');
 
 I2 = rgb2gray(I1);
 I3 = im2bw(I2, 0.3);

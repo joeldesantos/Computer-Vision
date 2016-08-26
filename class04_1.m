@@ -1,6 +1,6 @@
 close all; clear all;
-I1 = imread('..\images\lena512color.tiff');
-% my_img = imread('..\images\lena512color.tiff');
+I1 = imread('images\lena512color.tiff');
+% my_img = imread('images\lena512color.tiff');
 % I = rgb2gray(my_img);
 I2 = rgb2gray(I1);
 subplot(2,2,1), imshow(I2); axis off; colormap gray;

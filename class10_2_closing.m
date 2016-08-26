@@ -1,8 +1,8 @@
 close all; clear all;
 
-%I = imread('..\images\lena512color.tiff');
-%I = imread('..\images\red_flag.png');
-%I = imread('..\images\red_wallpaper.jpg');
+%I = imread('images\lena512color.tiff');
+%I = imread('images\red_flag.png');
+%I = imread('images\red_wallpaper.jpg');
 %I = imread('peppers.png');
 %I = rgb2gray(I);
 %A = I;

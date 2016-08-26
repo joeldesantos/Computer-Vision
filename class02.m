@@ -1,4 +1,4 @@
-my_image = imread('..\images\lena512color.tiff');
+my_image = imread('images\lena512color.tiff');
 grey_image = rgb2gray(my_image);
 %[x y] = size(grey_image);
 %ones_array = ones(x, y);

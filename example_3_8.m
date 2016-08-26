@@ -1,5 +1,5 @@
-%I = imread('..\images\lena512color.tiff')
-I = imread('cameraman.tif')
+%I = imread('images\lena512color.tiff');
+I = imread('cameraman.tif');
 
 subplot(221), imshow(I);
 

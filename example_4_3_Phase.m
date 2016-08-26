@@ -1,0 +1,9 @@
+I1 = double(imread('cameraman.tif'));
+RGB = double(imread('peppers.png'));
+I2 = .2989*RGB(:,:,1)+.5870*RGB(:,:,2)+.1140*RGB(:,:,3);
+I2 = I2(1:256,1:256);
+fftI1=(fft2(I1));
+afI1=abs(fftI1);
+phase=angle(fftI1);
+D=afI1.*exp(I1*phase);
+E=ifft2(D);

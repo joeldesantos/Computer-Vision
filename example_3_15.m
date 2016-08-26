@@ -1,5 +1,5 @@
-I = imread('..\images\coins.png');
-% my_img = imread('..\images\lena512color.tiff');
+I = imread('images\coins.png');
+% my_img = imread('images\lena512color.tiff');
 % I = rgb2gray(my_img);
 Im = imfilter(I, fspecial('average', [15 15]), 'replicate');
 It = I - (Im + 20);

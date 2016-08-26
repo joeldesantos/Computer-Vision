@@ -1,6 +1,6 @@
 close all; clear all;
 
-I1 = imread('..\images\lena512color.tiff');
+I1 = imread('images\lena512color.tiff');
 %I1 = imread('cameraman.tif'); % does not work
 %I1 = imread('peppers.png');
 I = rgb2gray(I1);

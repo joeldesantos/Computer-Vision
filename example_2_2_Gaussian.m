@@ -1,6 +1,6 @@
 close all; clear all;
-%A = imread('..\images\lena512color.tiff');
-A = imread('..\images\trui.png');
+%A = imread('images\lena512color.tiff');
+A = imread('images\trui.png');
 PSF = fspecial('gaussian', [5 5], 2);
 h = fspecial('motion', 10, 45);
 B = conv2(PSF, A);

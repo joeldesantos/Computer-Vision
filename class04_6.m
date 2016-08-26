@@ -1,5 +1,5 @@
 I1 = double(imread('cameraman.tif'));
-chiles = imread('peppers.png')
+chiles = imread('peppers.png');
 RGB = double(imread('peppers.png'));
 I2 = .2989*RGB(:,:,1)+.5870*RGB(:,:,2)+.1140*RGB(:,:,3);
 I2 = I2(1:256,1:256);

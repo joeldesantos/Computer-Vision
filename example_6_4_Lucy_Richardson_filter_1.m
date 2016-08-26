@@ -1,21 +1,17 @@
 close all; clear all;
 
-I1 = imread('..\images\lena512color.tiff');
-%I1 = imread('cameraman.tif'); % does not work
-%I1 = imread('peppers.png');
-I = rgb2gray(I1);
+f = zeros(101,101);
+f(1,1) = 1;
+H = hough(f);
+imshow(H,[])
+f(101,1) = 1;
+H = hough(f);
+imshow(H,[])
+f(1,101) = 1;
+H = hough(f);
+imshow(H,[])
+f(101,101) = 1;
+H = hough(f);
+imshow(H,[])
+f(51,51) = 1;
 
-%I=imread('pout.tif');
-
-LEN = 31; % length of blur
-THETA = 11; % angle of blur
-PSF = fspecial('motion',LEN,THETA); %create PSF
-Blurred = imfilter(I,PSF,'circular','conv'); %blur
-
-Difference = imabsdiff(I,Blurred); % difference
-luc1 = deconvlucy(Blurred,PSF,5);
-
-subplot(1,4,1), imshow(I, []); %Display original image
-subplot(1,4,2), imshow(Blurred, []); %Display original image with blurr
-subplot(1,4,3), imshow(Difference, []); %Display difference in iamges
-subplot(1,4,4), imshow(luc1, []); %Display retored image
